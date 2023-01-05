@@ -2,104 +2,117 @@
 <html>
 <head>
    <meta charset="utf-8">
+   <meta name="viewport" content="width=device=width, initial-scale=1.0">
    <title>Contact Beji Mohamed </title>
    <link rel="shortcut icon" href="Favicon2.ico" type="image/x-icon">
+   <link rel="stylesheet" href="./styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+   <link href="https://fonts.googleapis.com/css?family=Rancho&amp;effect=anaglyph|emboss|fire|fire-animation|neon|outline|shadow-multiple|3d|3d-float" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,100;0,500;0,700;1,100;1,700&family=Seymour+One&display=swap');
+   </style>
+   
 </head>
-
-<body bgcolor="grey">
+<body class="body_about">
    <header>
       
 
-     <!----insert the photo of profile -->
-     <a href="images/P1.jpg"><img align="righT" src="images/bj.png" height="500" widh="800"></a>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-
-     <h1  align="center"><i><font size="15" color="bleue" face="engravers mt">CONTACT</font>
-      </i>
-      </h1>
-     <!----insert navbar-->
-     <font color="white">
+      <!----insert the photo of profile -->
+      <a  href="images/P1.jpg"><img  class="photo" align="left" src="images/bj.png" height="500" widh="800"></a>
+   
+     
+ 
+      
+      <!----insert navbar-->
+     
       <nav>
          
-        <h1><a href ="index.html"><img src="images/home.png" height="30">
-          Home</a></h1> 
-         <h1><a href ="about.html"><img src="images/about.png" height="30">
-             About</a></h1>
-         <h1><a href ="work.html"><img src="images/work.png" height="30">
-             Work</a></h1>
-         <h1><a href ="resume.html"><img src="images/resume.png" height="30">
-            Resume</a> </h1>
-         <h1><img src="images/contact.png" height="30">
-            Contact</h1>
-      
+         <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house">Home</i></a></li>
+               
+         <li><a href ="about.html">
+            <i class="fa-solid fa-user">About</i>
+          
+             </a></li>
+            <li><a href="work.html"><i class="fa-solid fa-person-digging">Work</i>
+           </a></li>
+         <li><a href ="resume.html">
+            <i class="fa-solid fa-file">Resume</i>  
+            </a></li>
+         <li>
+            <i class="fa-solid fa-id-card">Contact</i>
+            </li>
+      </ul>
       </nav>
-   </font>
-   </header>
+  
+    </header>
+ 
 
-
-   <br>
+   
    <main>
-      <!--contacts of Beji Mohamed-->
-      <font size="5">
+      <h1 class="font-effect-3d">Contact</h1>
+      <!--contacts of Beji Mohamed--
+         <i class="fa-solid fa-location-dot"></i>
+      <i class="fa-solid fa-phone"></i>
+<i class="fa-solid fa-envelope"></i>
+<i class="fa-brands fa-linkedin"></i>
+<i class="fa-brands fa-square-twitter"></i>
+<i class="fa-brands fa-facebook"></i>
+   -->
+      
+
     <section>
       <ul type ="square">
-         <li><img src="images/location.png" height="30">158 Road Mongi Slim Ghannouch Gabes
-        <li><img src="images/phone.png" height="30">+216 98 660 595
-        <li><img src="images/email.png" height="30">beji.mohamed.beji@gmail.com
-        <li><img src="images/in.png" height="30"><a href ="https://www.linkedin.com/in/mohamed-beji-13a46025a/">Linkedin</a>
+         <li><i class="fa-solid fa-location-dot"></i>158 Road Mongi Slim Ghannouch Gabes
+        <li><i class="fa-solid fa-phone"></i>+216 98 660 595
+        <li><i class="fa-solid fa-envelope"></i>beji.mohamed.beji@gmail.com
+        <li><a href ="https://www.linkedin.com/in/mohamed-beji-13a46025a/"><i class="fa-brands fa-linkedin"></i>
+        </a>
         </li>
       </ul>
 
 </section>
-</font> 
 <!--send message-->
-<h2><font color="green" face="arial">For further informations you can send your message</font></h2>
-<table border = "3" bgcolor="blue">
-  <tr>
+<section>
+<h3>For further informations you can send your message</h3>
+
+
+
     <form>
        
-<td>
-       <label><font color="white">E-mail:</font></label>
+       <label>E-mail:</label>
        <input type="email" name="E-mail"/>
-       <br>
-       <br>
-       <br>
-       <br>
-      </td>
-      </tr>
-      <td>
-       <textarea name="message" cols="30" rows="5">
-        Write your message here
-    </textarea>
+     
+    <div class="form-floating">
+      <textarea class="form-control" placeholder="Leave Your Message Here" id="floatingTextarea2" style="height: 100px">
+      </textarea>
+      <label for="floatingTextarea2">Message</label>
+    </div>
+        
+     <button type="button" class="btn btn-primary">Send</button>
 
-  
-       <br />
-      
-       <button type="submit" ><font color="blue">Send</font></button>
-       <br>
-
-      </td>
-      </tr>
     </form>
   
-  </table>
+
+  </section>
    </main>
    <footer>
      
-      <h3>Copyright reserved To Beji Mohamed</h3>
+      <h6>Copyright reserved To Beji Mohamed</h6>
       <div>
-      <p ><font size="7" color="green">Powered by</font>
-      <a href ="https://www.gomycode.com" title="gomycode"><img src="images/gomycode.png" height="40"></a>
+      <p >Powered by
+      <a href ="https://www.gomycode.com" title="gomycode"><img src="images/gomycode.png" height="30"></a>
       </div>
-      <img  align ="righT" src="images/facebook.png" height="30">
-      <img  align ="righT" src="images/in.png" height="30">
-      <img  align ="righT" src="images/twitter.png" height="30">
+      <!--social media contact-->
+      <div class="socialmedia">
+         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+         <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+         <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      
+    
       <!--insert audio -->
       <audio autoplay controls loop>
          <source src="music.mp3" type ="audio/mpeg">Please the audio extension</audio>
@@ -107,5 +120,3 @@
 
    </footer>
 </body>
-
-</html>
